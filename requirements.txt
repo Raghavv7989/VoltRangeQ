@@ -1,0 +1,27 @@
+# ==============================================================================
+# VoltRangeQ: Core Quantum Machine Learning & Data Science Dependencies
+# ==============================================================================
+
+# Quantum Computing & Quantum Neural Networks
+pennylane>=0.40.0
+pennylane-lightning>=0.40.0
+autoray>=0.8.0
+autograd>=1.6.0
+
+# Scientific Computing & Data Processing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Classical Machine Learning & Benchmarking
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Data Visualization & Scientific Plotting
+matplotlib>=3.8.0
+pillow>=10.0.0
+
+# Graph Theory & Network Utilities
+networkx>=3.0
+rustworkx>=0.14.0

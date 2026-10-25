@@ -1,0 +1,90 @@
+import { DrivingCycle } from '../types';
+
+export const INDIAN_DRIVING_CYCLES: DrivingCycle[] = [
+  {
+    id: 'midc-urban',
+    name: 'MIDC Urban Cycle (Modified Indian Driving Cycle)',
+    region: 'Standard Indian Certification & City Transit',
+    totalDurationSec: 1080,
+    totalDistanceEstKm: 10.8,
+    avgSpeedKmh: 31.5,
+    maxSpeedKmh: 54.0,
+    points: [
+      { timeSec: 0, speedKmh: 0, gradientPercent: 0, trafficDensity: 'high', description: 'Signal Idle, AC Running' },
+      { timeSec: 30, speedKmh: 18, gradientPercent: 0.5, trafficDensity: 'high', description: '1st Acceleration Wave' },
+      { timeSec: 70, speedKmh: 32, gradientPercent: 0, trafficDensity: 'medium', description: 'Arterial Road Cruise' },
+      { timeSec: 120, speedKmh: 0, gradientPercent: 0, trafficDensity: 'high', description: 'Red Light Deceleration & Regen' },
+      { timeSec: 160, speedKmh: 45, gradientPercent: 1.0, trafficDensity: 'medium', description: 'Suburban Flyover Incline' },
+      { timeSec: 220, speedKmh: 52, gradientPercent: -1.0, trafficDensity: 'medium', description: 'Flyover Descent (Regen)' },
+      { timeSec: 280, speedKmh: 24, gradientPercent: 0, trafficDensity: 'high', description: 'Market Congestion' },
+      { timeSec: 350, speedKmh: 48, gradientPercent: 0.2, trafficDensity: 'medium', description: 'Open Ring Road' },
+      { timeSec: 420, speedKmh: 0, gradientPercent: 0, trafficDensity: 'high', description: 'Pedestrian Crossing Stop' },
+      { timeSec: 500, speedKmh: 38, gradientPercent: 0, trafficDensity: 'medium', description: 'Steady City Cruise' },
+      { timeSec: 600, speedKmh: 50, gradientPercent: 0.5, trafficDensity: 'low', description: 'Outer Corridor' },
+      { timeSec: 720, speedKmh: 20, gradientPercent: 0, trafficDensity: 'high', description: 'Bumper-to-Bumper Crawl' },
+      { timeSec: 850, speedKmh: 42, gradientPercent: 0.3, trafficDensity: 'medium', description: 'Clear Stretch' },
+      { timeSec: 960, speedKmh: 15, gradientPercent: 0, trafficDensity: 'high', description: 'Toll Plaza Queue' },
+      { timeSec: 1080, speedKmh: 0, gradientPercent: 0, trafficDensity: 'high', description: 'Trip Terminus' },
+    ]
+  },
+  {
+    id: 'mumbai-pune-expressway',
+    name: 'Mumbai-Pune Expressway & Bhor Ghat',
+    region: 'Western Ghats Corridor (NH 48)',
+    totalDurationSec: 1800,
+    totalDistanceEstKm: 42.5,
+    avgSpeedKmh: 85.0,
+    maxSpeedKmh: 110.0,
+    points: [
+      { timeSec: 0, speedKmh: 40, gradientPercent: 0, trafficDensity: 'low', description: 'Kalamboli Expressway On-Ramp' },
+      { timeSec: 150, speedKmh: 95, gradientPercent: 0.5, trafficDensity: 'low', description: 'Cruising past Panvel' },
+      { timeSec: 360, speedKmh: 105, gradientPercent: 1.0, trafficDensity: 'low', description: 'High-speed Concrete Flat' },
+      { timeSec: 600, speedKmh: 75, gradientPercent: 4.8, trafficDensity: 'medium', description: 'Approaching Khalapur Ghat Ascent' },
+      { timeSec: 900, speedKmh: 65, gradientPercent: 7.2, trafficDensity: 'medium', description: 'Steep Bhor Ghat Incline (+7.2%)' },
+      { timeSec: 1150, speedKmh: 60, gradientPercent: 6.5, trafficDensity: 'medium', description: 'Adoshi Tunnel Climb' },
+      { timeSec: 1350, speedKmh: 80, gradientPercent: -3.5, trafficDensity: 'medium', description: 'Khandala Downhill Coasting (Regen)' },
+      { timeSec: 1550, speedKmh: 95, gradientPercent: 0.8, trafficDensity: 'low', description: 'Lonavala Plateau Cruise' },
+      { timeSec: 1800, speedKmh: 100, gradientPercent: -0.5, trafficDensity: 'low', description: 'Urse Toll Stretch Towards Pune' },
+    ]
+  },
+  {
+    id: 'bengaluru-peak-traffic',
+    name: 'Bengaluru Silk Board - ORR Gridlock',
+    region: 'Bengaluru IT Corridor (Electronic City / Marathahalli)',
+    totalDurationSec: 1200,
+    totalDistanceEstKm: 5.2,
+    avgSpeedKmh: 14.2,
+    maxSpeedKmh: 35.0,
+    points: [
+      { timeSec: 0, speedKmh: 0, gradientPercent: 0, trafficDensity: 'severe', description: 'Stationary at Silk Board Junction (AC on)' },
+      { timeSec: 90, speedKmh: 8, gradientPercent: 0, trafficDensity: 'severe', description: 'Crawling in 1st Meter Wave' },
+      { timeSec: 180, speedKmh: 0, gradientPercent: 0, trafficDensity: 'severe', description: 'Auto-Rickshaw Cut-In Stop' },
+      { timeSec: 280, speedKmh: 15, gradientPercent: 1.2, trafficDensity: 'high', description: 'HSR Flyover Incline Crawl' },
+      { timeSec: 420, speedKmh: 28, gradientPercent: -0.8, trafficDensity: 'high', description: 'Brief Flyover Clearing' },
+      { timeSec: 540, speedKmh: 4, gradientPercent: 0, trafficDensity: 'severe', description: 'Bellandur Lake Jam' },
+      { timeSec: 720, speedKmh: 0, gradientPercent: 0, trafficDensity: 'severe', description: 'Bus Breakdown Standstill' },
+      { timeSec: 900, speedKmh: 22, gradientPercent: 0.4, trafficDensity: 'high', description: 'Ecospace Tech Park Signal' },
+      { timeSec: 1050, speedKmh: 35, gradientPercent: 0, trafficDensity: 'medium', description: 'Short Dash before Kadubeesanahalli' },
+      { timeSec: 1200, speedKmh: 0, gradientPercent: 0, trafficDensity: 'high', description: 'Destination Parking Gate' },
+    ]
+  },
+  {
+    id: 'himachal-ghat-uphill',
+    name: 'Himachal Kalka-Shimla Ghat Uphill',
+    region: 'NH 5 Himalayan Mountain Highway',
+    totalDurationSec: 1500,
+    totalDistanceEstKm: 28.0,
+    avgSpeedKmh: 42.0,
+    maxSpeedKmh: 65.0,
+    points: [
+      { timeSec: 0, speedKmh: 35, gradientPercent: 2.5, trafficDensity: 'low', description: 'Kalka Foothills Start' },
+      { timeSec: 200, speedKmh: 45, gradientPercent: 5.5, trafficDensity: 'low', description: 'Pinjore Bypass Uphill' },
+      { timeSec: 450, speedKmh: 38, gradientPercent: 8.4, trafficDensity: 'medium', description: 'Timber Trail Switchback Climb' },
+      { timeSec: 750, speedKmh: 42, gradientPercent: 7.0, trafficDensity: 'medium', description: 'Jabli Hairpin Turn' },
+      { timeSec: 1050, speedKmh: 50, gradientPercent: 4.0, trafficDensity: 'low', description: 'Dharampur Straight Stretch' },
+      { timeSec: 1250, speedKmh: 36, gradientPercent: 9.8, trafficDensity: 'medium', description: 'Barog Steep Grade (+9.8%)' },
+      { timeSec: 1400, speedKmh: 40, gradientPercent: 6.2, trafficDensity: 'low', description: 'Solan Valley Approach' },
+      { timeSec: 1500, speedKmh: 30, gradientPercent: 5.0, trafficDensity: 'low', description: 'Shimla Entry Ridge' },
+    ]
+  }
+];
